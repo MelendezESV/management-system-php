@@ -9,7 +9,7 @@
 <body class="page-error">
     <div class="main-container-error">
         <div class="sub-container-01-error">
-            <img class="image-404" src="../../public/img/404.png" alt="">
+            <img class="image-error" src="../../public/img/404.png" alt="">
         </div>
         <div class="sub-container-02-error">
             <h2>Not Found</h2>

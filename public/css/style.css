@@ -1,3 +1,4 @@
+
 * {
     padding: 0px;
     margin: 0px;
@@ -5,23 +6,17 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/********************* Backgroud Color ************************/
+
+.page-home, .page-login, .page-error {
+    background-color: #203464;
+}
+
 /*************************** Home *****************************/
 
-.page-home {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #203464;
-}
-
 /*************************** Login ****************************/
-.page-login {
-    margin: 0;
-    padding: 0;
+
+.main-container-login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,52 +25,95 @@
     background-color: #203464;
 }
 
-/************************** Erros Pages **************************/
+.login-side-left {
+    width: 375px;
+    height: 425px;
+    background-color: #4d4646;
+}
 
-.page-error {
-    margin: 0;
-    padding: 0;
+.login-side-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    width: 350px;
+    height: 425px;
+    background-color: #FFFFFF;
+}
+
+.login-form{
+    width: 75%;
+    height: 50%;
+}
+
+.login-label {
+    margin-top: 10px;
+}
+
+.login-input {
+    padding: 10px; 
+}
+
+.login-submit {
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #FFFFFF;
     background-color: #203464;
 }
+
+.login-label, .login-input, .login-submit {
+    display: block;
+    width: 100%;
+    height: 15%;
+}
+
+/************************** Error Pages ***********************/
 
 .main-container-error {
-    width: 350px;
-    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    background-color: #203464;
 }
 
 .sub-container-01-error {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 75%;
+    width: 350px;
+    height: 225px;
 }
 
-.sub-container-01-error .image-error {
+.image-error {
     width: 100%;
-    height: auto;
 }
 
 .sub-container-02-error {
-    width: 100%;
-    height: 25%;
-    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    height: 150px;
 }
 
 .sub-container-02-error h2{
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 5px 0px;
+    padding: 10px 0px;
 }
 
-.sub-container-02-error p{
-    text-align: center;
+/************************* Media query ************************/
+
+@media (max-width: 750px) {
+    .login-side-left {
+        display: none;
+    }
 }
 
 /**************************************************************/

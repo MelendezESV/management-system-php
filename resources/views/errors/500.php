@@ -13,13 +13,15 @@
         </div>
         <div class="sub-container-02-error">
             <h2>Internal Server Error</h2>
-            <?php 
-                if (isset($dbErrorCode)) {
-                    echo '<p>' . 'We\'re sorry, but an internal server error occurred, Error Code: ' . $dbErrorCode .'</p>';
-                }else {
-                    echo '<p>' . 'We\'re sorry, but there was an internal server error, please contact support.' .'</p>';
-                }
-            ?>
+            <p>
+                <?php
+                    if (isset($dbErrorCode)) {
+                        echo 'We\'re sorry, but an internal server error occurred, Error Code: ' . $dbErrorCode .'.';
+                    }else {
+                        echo "We're sorry, but there was an internal server error, please contact support.";
+                    }
+                ?>
+            </p>
         </div>
     </div>
 </body>
